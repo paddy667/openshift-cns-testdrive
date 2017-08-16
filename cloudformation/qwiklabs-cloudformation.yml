@@ -62,17 +62,17 @@ Parameters:
 Mappings:
   AWSRegion2AMI:
     us-east-1:
-      ami: ami-aaebc3d1
+      ami: ami-ba9fadc1
     us-east-2:
       ami: NOT_SUPPORTED
     us-west-1:
       ami: NOT_SUPPORTED
     us-west-2:
-      ami: ami-6f22c217
+      ami: ami-9032dfe8
     eu-west-1:
-      ami: ami-da03f2a3
+      ami: ami-87a954fe
     eu-central-1:
-      ami: ami-1b349a74
+      ami: ami-ccd870a3
     ap-northeast-1:
       ami: NOT_SUPPORTED
     ap-northeast-2:
@@ -1180,7 +1180,7 @@ Resources:
             fqdn: idm.internal.${PublicHostedZone}
 
             runcmd:
-            - /usr/local/bin/idm-install
+            - /usr/local/bin/idm-install > /var/log/idm-install.log
             - reboot
 
   GuideNode:
